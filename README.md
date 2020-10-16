@@ -32,7 +32,7 @@ Run app for web browsers.
 * [x] Criando tela de mapa
 * [x] Trabalhando com rotas
 ## 5º Finalizando app mobile (A minha extra)
-* [ ] Criando fluxo de cadastro de orfanato
+* [x] Criando fluxo de cadastro de orfanato
 * [ ] Adicionando telas faltantes
 * [ ] Detalhe do orfanato
 * [ ] Criando orfanato

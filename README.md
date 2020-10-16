@@ -15,6 +15,10 @@ Run app for iOS devices.
 ### `yarn web`
 Run app for web browsers.
 
+# About The App Happy (Mobile)
+## 4º Dia
+<img src="/src/images/screenshots/01 - OrphanagesMap.png" width="300">
+
 # Trilha OmniStack
 ## 1º [Dia: Conceitos e estrutura web (Acelerando sua evolução)](https://github.com/FlavioMiyaji/nlw3-happy-web)
 ## 2º [Dia: Back-end com Node.js (Olhando as oportunidades)](https://github.com/FlavioMiyaji/nlw3-happy)

@@ -31,4 +31,16 @@ Run app for web browsers.
 * [ ] Criando onboarding
 * [x] Criando tela de mapa
 * [x] Trabalhando com rotas
-## 5º (A minha extra)
+## 5º Finalizando app mobile (A minha extra)
+* [ ] Criando fluxo de cadastro de orfanato
+* [ ] Adicionando telas faltantes
+* [ ] Detalhe do orfanato
+* [ ] Criando orfanato
+* [ ] Desafios
+* [ ] Surpresa especial
+
+# Desafios
+* [ ] Implementar o entrar em contato (WhatsApp)
+* [ ] Shimmer effect
+* [ ] Dark/Ligth themes
+* [ ] I18n

@@ -20,7 +20,7 @@ Next Level Week #3 Mobile app in ReactNative.
 * [x] Por que vamos usar Expo?
 * [x] Diferenças pro ReactJS
 * [x] Criando projeto
-* [-] Criando onboarding
+* [ ] Criando onboarding
 * [x] Criando tela de mapa
-* [ ] Trabalhando com rotas
+* [x] Trabalhando com rotas
 ## 5º (A minha extra)

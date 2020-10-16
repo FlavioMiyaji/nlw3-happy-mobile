@@ -34,7 +34,7 @@ export default function Routes() {
           component={SelectMapPosition}
           options={{
             headerShown: true,
-            header: () => <Header title="Select position" />
+            header: () => <Header title="Select position" cancelShown={false} />
           }}
         />
 

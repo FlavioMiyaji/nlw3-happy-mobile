@@ -33,7 +33,7 @@ Run app for web browsers.
 * [x] Trabalhando com rotas
 ## 5º Finalizando app mobile (A minha extra)
 * [x] Criando fluxo de cadastro de orfanato
-* [ ] Adicionando telas faltantes
+* [x] Adicionando telas faltantes
 * [ ] Detalhe do orfanato
 * [ ] Criando orfanato
 * [ ] Desafios

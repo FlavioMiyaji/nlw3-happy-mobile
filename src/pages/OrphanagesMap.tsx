@@ -15,6 +15,10 @@ export default function OrphanagesMap() {
         navigation.navigate('OrphanageDetails');
     }
 
+    function handleNavigateToSelectMapPosition() {
+        navigation.navigate('SelectMapPosition');
+    }
+
     return (
         <View style={styles.container}>
             <StatusBar style="dark" />
@@ -47,10 +51,10 @@ export default function OrphanagesMap() {
                 </Marker>
             </MapView>
             <View style={styles.footerContainer}>
-                <Text style={styles.footerText}>2 orfanatos encontrados</Text>
+                <Text style={styles.footerText}>2 orphanages found</Text>
                 <RectButton
                     style={styles.createOrphanageButton}
-                    onPress={() => { }}
+                    onPress={handleNavigateToSelectMapPosition}
                 >
                     <Feather name="plus" size={20} color="#fff" />
                 </RectButton>

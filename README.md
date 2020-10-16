@@ -4,12 +4,16 @@ Next Level Week #3 Mobile app in ReactNative.
 ## Available Scripts
 
 ### `yarn start`
+Starts Metro Bundler.
 
 ### `yarn android`
+Run app for Android devices.
 
 ### `yarn ios`
+Run app for iOS devices.
 
 ### `yarn web`
+Run app for web browsers.
 
 # Trilha OmniStack
 ## 1º [Dia: Conceitos e estrutura web (Acelerando sua evolução)](https://github.com/FlavioMiyaji/nlw3-happy-web)

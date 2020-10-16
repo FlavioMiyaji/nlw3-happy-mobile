@@ -17,7 +17,7 @@ Run app for web browsers.
 
 # About The App Happy (Mobile)
 ## 4º Dia
-<img src="/src/images/screenshots/01 - OrphanagesMap.png" width="300">
+<img src="/src/images/screenshots/01 - OrphanagesMap.jpg" width="300">
 
 # Trilha OmniStack
 ## 1º [Dia: Conceitos e estrutura web (Acelerando sua evolução)](https://github.com/FlavioMiyaji/nlw3-happy-web)

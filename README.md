@@ -22,7 +22,7 @@ Run app for web browsers.
 ## 5º Dia: Finalizando app mobile
 <img src="/src/images/screenshots/02 - Map.jpg" width="250"> <img src="/src/images/screenshots/03 - Details.jpg" width="250"> <img src="/src/images/screenshots/04 - Details.jpg" width="250">
 
-<img src="/src/images/screenshots/05 - Position.jpg" width="270"> <img src="/src/images/screenshots/06 - Register.jpg" width="270"> <img src="/src/images/screenshots/07 - Register.jpg" width="270">
+<img src="/src/images/screenshots/05 - Position.jpg" width="250"> <img src="/src/images/screenshots/06 - Register.jpg" width="250"> <img src="/src/images/screenshots/07 - Register.jpg" width="250">
 
 # Trilha OmniStack
 ## 1º [Dia: Conceitos e estrutura web (Acelerando sua evolução)](https://github.com/FlavioMiyaji/nlw3-happy-web)

@@ -34,6 +34,7 @@ Run app for web browsers.
 ## 5º Finalizando app mobile (A minha extra)
 * [x] Criando fluxo de cadastro de orfanato
 * [x] Adicionando telas faltantes
+* [x] Buscar orfanatos da API
 * [ ] Detalhe do orfanato
 * [ ] Criando orfanato
 * [ ] Desafios

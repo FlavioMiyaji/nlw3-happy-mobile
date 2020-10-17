@@ -35,7 +35,7 @@ Run app for web browsers.
 * [x] Criando fluxo de cadastro de orfanato
 * [x] Adicionando telas faltantes
 * [x] Buscar orfanatos da API
-* [ ] Detalhe do orfanato
+* [x] Detalhe do orfanato
 * [ ] Criando orfanato
 * [ ] Desafios
 * [ ] Surpresa especial

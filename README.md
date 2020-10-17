@@ -1,21 +1,6 @@
-# nlw3-happy-mobile
+# About The App Happy (Mobile)
 Next Level Week #3 Mobile app in ReactNative.
 
-## Available Scripts
-
-### `yarn start`
-Starts Metro Bundler.
-
-### `yarn android`
-Run app for Android devices.
-
-### `yarn ios`
-Run app for iOS devices.
-
-### `yarn web`
-Run app for web browsers.
-
-# About The App Happy (Mobile)
 ## 4º Dia: Estruturando app modile
 <img src="/src/images/screenshots/01 - OrphanagesMap.jpg" width="300">
 
@@ -62,3 +47,17 @@ Run app for web browsers.
 * [ ] Cadastro em múltiplas etapas
 * [ ] Logout da aplicação
 * [ ] Deploy da aplicação
+
+## Available Scripts
+
+### `yarn start`
+Starts Metro Bundler.
+
+### `yarn android`
+Run app for Android devices.
+
+### `yarn ios`
+Run app for iOS devices.
+
+### `yarn web`
+Run app for web browsers.

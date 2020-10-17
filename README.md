@@ -20,9 +20,9 @@ Run app for web browsers.
 <img src="/src/images/screenshots/01 - OrphanagesMap.jpg" width="300">
 
 ## 5º Dia: Finalizando app mobile
-<img src="/src/images/screenshots/02 - Map.jpg" width="300"> <img src="/src/images/screenshots/03 - Details.jpg" width="300"> <img src="/src/images/screenshots/04 - Details.jpg" width="300">
+<img src="/src/images/screenshots/02 - Map.jpg" width="220"> <img src="/src/images/screenshots/03 - Details.jpg" width="220"> <img src="/src/images/screenshots/04 - Details.jpg" width="220">
 
-<img src="/src/images/screenshots/05 - Position.jpg" width="300"> <img src="/src/images/screenshots/06 - Register.jpg" width="300"> <img src="/src/images/screenshots/07 - Register.jpg" width="300">
+<img src="/src/images/screenshots/05 - Position.jpg" width="180"> <img src="/src/images/screenshots/06 - Register.jpg" width="180"> <img src="/src/images/screenshots/07 - Register.jpg" width="180">
 
 # Trilha OmniStack
 ## 1º [Dia: Conceitos e estrutura web (Acelerando sua evolução)](https://github.com/FlavioMiyaji/nlw3-happy-web)

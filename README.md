@@ -16,8 +16,13 @@ Run app for iOS devices.
 Run app for web browsers.
 
 # About The App Happy (Mobile)
-## 4º Dia
+## 4º Dia: Estruturando app modile
 <img src="/src/images/screenshots/01 - OrphanagesMap.jpg" width="300">
+
+## 5º Dia: Finalizando app mobile
+<img src="/src/images/screenshots/02 - Map.jpg" width="300"> <img src="/src/images/screenshots/03 - Details.jpg" width="300"> <img src="/src/images/screenshots/04 - Details.jpg" width="300">
+
+<img src="/src/images/screenshots/05 - Position.jpg" width="300"> <img src="/src/images/screenshots/06 - Register.jpg" width="300"> <img src="/src/images/screenshots/07 - Register.jpg" width="300">
 
 # Trilha OmniStack
 ## 1º [Dia: Conceitos e estrutura web (Acelerando sua evolução)](https://github.com/FlavioMiyaji/nlw3-happy-web)
@@ -37,12 +42,12 @@ Run app for web browsers.
 * [x] Buscar orfanatos da API
 * [x] Detalhe do orfanato
 * [x] Criando orfanato
-* [ ] [Desafios](https://github.com/rocketseat-education/nlw-03-omnistack) [Notion](https://www.notion.so/Vers-o-2-0-do-Happy-c754db7a4d41469e8c2d00fcf75392c4)
-* [ ] Surpresa especial
+* [ ] [Desafios](https://github.com/rocketseat-education/nlw-03-omnistack) ([Notion](https://www.notion.so/Vers-o-2-0-do-Happy-c754db7a4d41469e8c2d00fcf75392c4))
+* [x] Surpresa especial [TabNine - 100 dias gratuito](https://www.tabnine.com/promotion/NextLevelWeek/)
 
 # Desafios
 * [ ] Implementar o entrar em contato (WhatsApp)
 * [ ] Shimmer effect
 * [ ] Dark/Ligth themes
 * [ ] I18n
-* [ ] Remove image
+* [x] Remove image

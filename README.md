@@ -37,7 +37,7 @@ Run app for web browsers.
 * [x] Buscar orfanatos da API
 * [x] Detalhe do orfanato
 * [x] Criando orfanato
-* [ ] [Desafios](https://github.com/rocketseat-education/nlw-03-omnistack) [Notion](https://www.notion.so/Vers-o-2-0-do-Happy-c754db7a4d41469e8c2d00fcf75392c4)
+* [ ] [Desafios](https://github.com/rocketseat-education/nlw-03-omnistack) [Notion](https://www.notion.so/Vers-o-2-0-do-Happy-81e92a97f645435d97c492e5fc7e598c)
 * [ ] Surpresa especial
 
 # Desafios

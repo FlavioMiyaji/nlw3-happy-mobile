@@ -1,8 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { Image, View, ScrollView, Text, StyleSheet, Dimensions, ActivityIndicator } from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  Alert,
+  Linking,
+  ScrollView,
+  StyleSheet,
+  Dimensions,
+  ActivityIndicator,
+} from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import { Feather, FontAwesome } from '@expo/vector-icons';
-import { RectButton } from 'react-native-gesture-handler';
+import { RectButton, TouchableOpacity } from 'react-native-gesture-handler';
 import { useRoute } from '@react-navigation/native';
 
 import mapMarkerImg from '../images/map-marker.png';
@@ -39,7 +49,7 @@ export default function OrphanageDetails() {
         const { data } = await api.get<Orphanage>(`orphanages/${id}`);
         setOrphanage(data);
       } catch (err) {
-        console.log(err);
+        Alert.alert('', err.message);
       }
     };
     loadOrphanage();
@@ -55,105 +65,108 @@ export default function OrphanageDetails() {
       </View>
     );
   }
+
+  function handleViewGoogleMaps() {
+    Linking.openURL(`https://www.google.com/maps/dir/?api=1&destination=${orphanage?.latitude},${orphanage?.longitude}`);
+  }
+
   return (
-    <ScrollView
-      style={styles.container}
-      contentContainerStyle={styles.content}
-    >
-      <View style={styles.imagesContainer}>
-        <ScrollView horizontal pagingEnabled>
-          {orphanage.images.map((image, index) => (
-            <Image
-              key={image.id}
-              style={styles.image}
-              source={{ uri: image.url }}
-            />
-          ))}
-        </ScrollView>
-        <View style={styles.ellipsesContainer}>
-          {orphanage.images.map((image, index) => (
-            <View style={styles.ellipse} />
-          ))}
-        </View>
-      </View>
-
-      <View style={styles.detailsContainer}>
-        <Text style={styles.title}>{orphanage.name}</Text>
-        <Text style={styles.description}>{orphanage.about}</Text>
-
-        <View style={styles.mapContainer}>
-          <MapView
-            initialRegion={{
-              latitude: orphanage.latitude,
-              longitude: orphanage.longitude,
-              latitudeDelta: 0.008,
-              longitudeDelta: 0.008,
-            }}
-            zoomEnabled={false}
-            pitchEnabled={false}
-            scrollEnabled={false}
-            rotateEnabled={false}
-            style={styles.mapStyle}
-          >
-            <Marker
-              icon={mapMarkerImg}
-              coordinate={{
-                latitude: orphanage.latitude,
-                longitude: orphanage.longitude,
-              }}
-            />
-          </MapView>
-
-          <View style={styles.routesContainer}>
-            <Text style={styles.routesText}>View directions on Google Maps</Text>
+    <>
+      <ScrollView style={styles.container} >
+        <View style={styles.imagesContainer}>
+          <ScrollView horizontal pagingEnabled>
+            {orphanage.images.map((image, index) => (
+              <Image
+                key={image.id}
+                style={styles.image}
+                source={{ uri: image.url }}
+              />
+            ))}
+          </ScrollView>
+          <View style={styles.ellipsesContainer}>
+            {orphanage.images.map((image, index) => (
+              <View key={image.id} style={styles.ellipse} />
+            ))}
           </View>
         </View>
 
-        <View style={styles.separator} />
+        <View style={styles.detailsContainer}>
+          <Text style={styles.title}>{orphanage.name}</Text>
+          <Text style={styles.description}>{orphanage.about}</Text>
 
-        <Text style={styles.title}>Visiting instructions</Text>
-        <Text style={styles.description}>{orphanage.instructions}</Text>
-
-        <View style={styles.scheduleContainer}>
-          <View style={[styles.scheduleItem, styles.scheduleItemBlue]}>
-            <Feather name="clock" size={40} color="#2AB5D1" />
-            <Text style={[styles.scheduleText, styles.scheduleTextBlue]}>{`Week days\n${orphanage.opening_hours}`}</Text>
+          <View style={styles.mapContainer}>
+            <TouchableOpacity onPress={handleViewGoogleMaps}>
+              <>
+                <MapView
+                  initialRegion={{
+                    latitude: orphanage.latitude,
+                    longitude: orphanage.longitude,
+                    latitudeDelta: 0.008,
+                    longitudeDelta: 0.008,
+                  }}
+                  zoomEnabled={false}
+                  pitchEnabled={false}
+                  scrollEnabled={false}
+                  rotateEnabled={false}
+                  style={styles.mapStyle}
+                >
+                  <Marker
+                    icon={mapMarkerImg}
+                    coordinate={{
+                      latitude: orphanage.latitude,
+                      longitude: orphanage.longitude,
+                    }}
+                  />
+                </MapView>
+                <View style={styles.routesContainer}>
+                  <Text style={styles.routesText}>View directions on Google Maps</Text>
+                </View>
+              </>
+            </TouchableOpacity>
           </View>
 
-          {orphanage.open_on_weekends
-            ? (
-              <View style={[styles.scheduleItem, styles.scheduleItemGreen]}>
-                <Feather name="info" size={40} color="#39CC83" />
-                <Text style={[styles.scheduleText, styles.scheduleTextGreen]}>
-                  {`Open\non weekend`}
-                </Text>
-              </View>
-            ) : (
-              <View style={[styles.scheduleItem, styles.scheduleItemRed]}>
-                <Feather name="info" size={40} color="#ff669d" />
-                <Text style={[styles.scheduleText, styles.scheduleTextGreen]}>
-                  {`Closed\non weekend`}
-                </Text>
-              </View>
-            )}
-        </View>
+          <View style={styles.separator} />
 
-        <RectButton style={styles.contactButton} onPress={() => { }}>
-          <FontAwesome name="whatsapp" size={24} color="#FFF" />
-          <Text style={styles.contactButtonText}>Contact us</Text>
-        </RectButton>
-      </View>
-    </ScrollView>
+          <Text style={styles.title}>Visiting instructions</Text>
+          <Text style={styles.description}>{orphanage.instructions}</Text>
+
+          <View style={styles.scheduleContainer}>
+            <View style={[styles.scheduleItem, styles.scheduleItemBlue]}>
+              <Feather name="clock" size={40} color="#2AB5D1" />
+              <Text style={[styles.scheduleText, styles.scheduleTextBlue]}>{`Week days\n${orphanage.opening_hours}`}</Text>
+            </View>
+
+            {orphanage.open_on_weekends
+              ? (
+                <View style={[styles.scheduleItem, styles.scheduleItemGreen]}>
+                  <Feather name="info" size={40} color="#39CC83" />
+                  <Text style={[styles.scheduleText, styles.scheduleTextGreen]}>
+                    {`Open\non weekend`}
+                  </Text>
+                </View>
+              ) : (
+                <View style={[styles.scheduleItem, styles.scheduleItemRed]}>
+                  <Feather name="info" size={40} color="#ff669d" />
+                  <Text style={[styles.scheduleText, styles.scheduleTextRed]}>
+                    {`Closed\non weekend`}
+                  </Text>
+                </View>
+              )}
+          </View>
+
+          <RectButton style={styles.contactButton} onPress={() => { }}>
+            <FontAwesome name="whatsapp" size={24} color="#FFF" />
+            <Text style={styles.contactButtonText}>Contact us</Text>
+          </RectButton>
+        </View>
+      </ScrollView>
+    </>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-
-  content: {
-    padding: 0,
   },
 
   loadingContainer: {
@@ -215,7 +228,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     borderWidth: 1.2,
     borderColor: '#B3DAE2',
-    marginTop: 40,
+    marginVertical: 40,
     backgroundColor: '#E6F7FB',
   },
 
@@ -239,7 +252,7 @@ const styles = StyleSheet.create({
     height: 0.8,
     width: '100%',
     backgroundColor: '#D3E2E6',
-    marginVertical: 40,
+    marginBottom: 40,
   },
 
   scheduleContainer: {

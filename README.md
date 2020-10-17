@@ -36,8 +36,8 @@ Run app for web browsers.
 * [x] Adicionando telas faltantes
 * [x] Buscar orfanatos da API
 * [x] Detalhe do orfanato
-* [ ] Criando orfanato
-* [ ] Desafios
+* [x] Criando orfanato
+* [ ] [Desafios](https://github.com/rocketseat-education/nlw-03-omnistack) [Notion](https://www.notion.so/Vers-o-2-0-do-Happy-c754db7a4d41469e8c2d00fcf75392c4)
 * [ ] Surpresa especial
 
 # Desafios
@@ -45,3 +45,4 @@ Run app for web browsers.
 * [ ] Shimmer effect
 * [ ] Dark/Ligth themes
 * [ ] I18n
+* [ ] Remove image

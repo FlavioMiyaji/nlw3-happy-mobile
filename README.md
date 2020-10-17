@@ -45,9 +45,20 @@ Run app for web browsers.
 * [ ] [Desafios](https://github.com/rocketseat-education/nlw-03-omnistack) ([Notion](https://www.notion.so/Vers-o-2-0-do-Happy-c754db7a4d41469e8c2d00fcf75392c4))
 * [x] Surpresa especial [TabNine - 100 dias gratuito](https://www.tabnine.com/promotion/NextLevelWeek/)
 
-# Desafios
+# TODO - Desafios
 * [ ] Implementar o entrar em contato (WhatsApp)
 * [ ] Shimmer effect
 * [ ] Dark/Ligth themes
 * [ ] I18n
 * [x] Remove image
+* [x] Layout da aplicação [web](https://www.figma.com/file/sUGL5uzKzs8judEMeZj6Kj/Happy-Web-2.0-Copy) [mobile](https://www.figma.com/file/nD2FlWH6aVeOg7Xo9YiACn/Happy-Mobile-2.0-Copy)
+* [ ] Splash screen
+* [ ] Dicas
+* [ ] Acesso restrito
+* [ ] Recuperação de senhas
+* [ ] Cadastro de orfanatos
+* [ ] Onboarding do usuário
+* [ ] Localização real do usuário
+* [ ] Cadastro em múltiplas etapas
+* [ ] Logout da aplicação
+* [ ] Deploy da aplicação

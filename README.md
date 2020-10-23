@@ -33,7 +33,7 @@ Next Level Week #3 Mobile app in ReactNative.
 # TODO - Desafios
 * [ ] Implementar o entrar em contato (WhatsApp)
 * [ ] Shimmer effect
-* [ ] Dark/Ligth themes
+* [ ] Dark/Ligth themes (Começando)
 * [ ] I18n
 * [x] Remove image
 * [x] Layout da aplicação [web](https://www.figma.com/file/sUGL5uzKzs8judEMeZj6Kj/Happy-Web-2.0-Copy) [mobile](https://www.figma.com/file/nD2FlWH6aVeOg7Xo9YiACn/Happy-Mobile-2.0-Copy)
